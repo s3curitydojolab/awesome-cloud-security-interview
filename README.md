@@ -58,7 +58,6 @@
 
 ### Attack & Defense
 - How do you secure an AWS EC2 instance?
-- What is AWS Identity and Access Management (IAM), and how does it work?
 - How can you protect against DDoS attacks in AWS?
 - What is AWS GuardDuty, and how does it help in security?
 - Explain the purpose of AWS CloudTrail and CloudWatch in security monitoring.
@@ -72,7 +71,6 @@
 - What is a privilege escalation attack, and how do you prevent it in a cloud environment?
 - Explain the importance of web application firewalls (WAFs) in cloud security.
 - How can you detect and respond to insider threats in a cloud environment?
-- Describe a scenario where a misconfigured IAM policy in AWS posed a security risk. How would you identify and rectify such misconfigurations?
 - What is a Distributed Denial-of-Service (DDoS) attack, and how can cloud providers help mitigate it?
 - How do you ensure the security of data transferred between on-premises infrastructure and the cloud?
 - Imagine you are responsible for reviewing the security of AWS Lambda functions in your organization's environment. You discover a Lambda function that has an SSRF (Server-Side Request Forgery) vulnerability, and specifically at "http://127.0.0.1:9001/2018-06-01/runtime/invocation/next." Explain the potential security risks associated with this SSRF vulnerability and how you would recommend mitigating these risks.
@@ -88,11 +86,7 @@
 - How do you configure security groups and network ACLs to enforce network segmentation within an AWS VPC?
 - Describe the benefits and use cases of using AWS Transit Gateway for network segmentation.
 - What are the key considerations when implementing cross-account access controls for AWS resources in a segmented environment?
-- What is the purpose of the IAM PassRole permission, and how is it used in AWS?
-- Explain the potential security risks associated with granting the PassRole permission to IAM roles.
 - How do you restrict the usage of the PassRole permission to specific roles and resources while ensuring security?
-- Describe a scenario where you would use the PassRole permission in AWS IAM, and how would you ensure its security?
-- What best practices would you follow when managing IAM roles with PassRole permissions in a AWS environment?
 - What is the AWS CIS (Center for Internet Security) Benchmark, and why is it important for securing AWS resources?
 - Describe some key security checks included in the AWS CIS Benchmark for AWS Identity and Access Management (IAM).
 - How do you use AWS Config to check compliance with the AWS CIS Benchmark, and what actions would you take if non-compliance is detected?
@@ -106,13 +100,52 @@
 - When should you use TGW (Transit Gateway), and is there any security improvement for using this?
 - Why security group named "default" with ports 22, 25, 53, 80, 443, 8080, 6443, 3679, 3306, 9001 is an issue?
 - Can you explain how to use and when to use Access Key ID and Principal ID with one example?
-- Explain the given IAM policy and its purpose.
 - Explain the given policy and identify any issues with it.
 - What comes to your mind when a service needs cross-account access?
-- What security needs be taken care when giving cross acount access & what is confused deputy in IAM?
 - Do you agree that we need to enable data encryption at rest by default?
 - What checks do you perform in IAM to ensure a Lambda function triggered by an event works correctly?
 
+#### IAM 
+
+- Describe a scenario where a misconfigured IAM policy in AWS posed a security risk. How would you identify and rectify such misconfigurations?
+- What checks do you perform in IAM to ensure a Lambda function triggered by an event works correctly?
+- Explain the given IAM policy and its purpose.
+- Describe some key security checks included in the AWS CIS Benchmark for AWS Identity and Access Management (IAM).
+- What security needs be taken care when giving cross acount access & what is confused deputy in IAM?
+- Describe a scenario where you would use the PassRole permission in AWS IAM, and how would you ensure its security?
+- What best practices would you follow when managing IAM roles with PassRole permissions in a AWS environment?
+- What is the purpose of the IAM PassRole permission, and how is it used in AWS?
+- Explain the potential security risks associated with granting the PassRole permission to IAM roles.
+- Describe a scenario where a misconfigured IAM policy in AWS posed a security risk. How would you identify and rectify such misconfigurations?
+- What is AWS Identity and Access Management (IAM), and how does it work?
+- Can you briefly explain the purpose and advantages of IAM roles in AWS?
+- How does AWS's IAM Roles Anywhere differ from traditional IAM roles?
+- Explain how IAM Roles Anywhere improves security for applications running outside of AWS?
+- How does the IAM Roles Anywhere feature remove the need for long-term AWS credentials?
+- Describe how IAM Roles Anywhere uses public key infrastructure (PKI) to authenticate workloads outside AWS.
+- How does an application outside of AWS use IAM Roles Anywhere to obtain temporary AWS credentials?
+- What role does the AWS Certificate Manager Private Certificate Authority (ACM PCA) play in IAM Roles Anywhere?
+- What are the primary steps involved in setting up and using IAM Roles Anywhere?
+- How does AWS validate an authentication request coming from a workload outside of AWS using IAM Roles Anywhere?
+- What are some of the tasks that an AWS account administrator needs to perform when setting up IAM Roles Anywhere?
+- How can you use IAM Roles Anywhere to backup on-premises data to Amazon S3?
+- If you had an on-premises application that needed access to a secret stored in AWS Secrets Manager, how would you configure that using IAM Roles Anywhere?
+- What are the security implications of using X.509 certificates for temporary AWS credential exchange?
+- How do the combined settings of a role's main policies and session policies in IAM Roles Anywhere determine the final permissions for an IAM session?
+- What are some potential risks or challenges with managing certificates in the context of IAM Roles Anywhere, and how would you mitigate them?
+- Imagine you're tasked with setting up a hybrid cloud environment, where a containerized application running in an on-premises Kubernetes cluster needs to access data from Amazon DynamoDB. How would you securely enable this access using IAM Roles Anywhere?
+- How would you achieve the principle of least privilege using AWS IAM? What challenges have you faced in doing so?
+- Could you give an overview of AWS IAM's functionality and share how you've utilized it in your projects?
+- Break down the key components of an AWS IAM policy statement and explain their respective roles.
+- What entities can be defined in the IAM policy's Principal element?
+- If one IAM statement grants permission and another denies it for the same operation on the same resource, how is this conflict resolved?
+- Differentiate between IAM roles and users. When would you opt for one over the other?
+- Describe the process IAM follows to evaluate policies when an API request is made. How does it determine access permissions?
+- How can you link identities from corporate directories, like Active Directory, with AWS IAM roles?
+- Contrast IAM policies with S3 bucket policies. What are their primary distinctions?
+- Is it possible to integrate AWS IAM with external identity providers? If so, how?
+- Can AWS IAM policies be hierarchical or inherited from one another?
+- How does AWS IAM grant or restrict access to resources?
 
 
 ### Detection & Monitoring
