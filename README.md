@@ -228,9 +228,11 @@
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
-<a href="https://github.com/OWNER/REPO/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=OWNER/REPO" />
+<a href="https://github.com/s3curitydojolab/cloud-security-interview/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=s3curitydojolab/cloud-security-interview" />
 </a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
