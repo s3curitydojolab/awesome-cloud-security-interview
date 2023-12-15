@@ -1,4 +1,4 @@
-# Cloud Security Interview Questions :+1:
+# Awesome Cloud Security Interview Questions :+1:
 
 ![CloudSecurityBysecuritydojo](images/logo.png)
 
